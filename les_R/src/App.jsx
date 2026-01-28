@@ -1,9 +1,9 @@
 import "./App.css";
-import Presentation from "./components/presentation";
+import Presentation from "./components/presentation/presentation.jsx";
 
 function App() {
   return (
-    <div className="w-screen h-screen bg-black">
+    <div className="w-screen h-screen bg-black overflow-hidden">
       <Presentation></Presentation>
     </div>
   );

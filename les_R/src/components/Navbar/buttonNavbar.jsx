@@ -1,11 +1,11 @@
-const ButtonNavbar = () => {
- return (
-    <button className="bg-gradient-to-r from-black to-green-400 h-[60%] w-[60%] border-none">
-        <p className="text-2xl text-white font-bold ">
-            Rejoin-Nous
-        </p>
-    </button>
- )   
-}
+import { motion } from "framer-motion";
 
-export default ButtonNavbar
+const ButtonNavbar = () => {
+  return (
+    <button className="bg-black h-[45%] w-[45%] rounded-3xl shadow-inner border-none hover">
+        <p className="text-xl text-white font-semibold">Rejoin-nous</p>
+    </button>
+  );
+};
+
+export default ButtonNavbar;

@@ -5,3 +5,11 @@
 .text{
     font-size : 22px;
 }
+
+.colorText{
+   background: linear-gradient(to right, #000000, #8dc34c);
+}
+
+.bg-gray{
+    background : #141313
+}

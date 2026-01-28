@@ -12,7 +12,7 @@ const ContentNavbar = () => {
         <MotionElement 
          initial={{opacity:0, y:50}}
          animate={{opacity: Affichage ? 1 : 0, y: Affichage ? 0: 50}}
-         transition={{duration:1.5, delay:0.3}}
+         transition={{duration:1.5, delay:0.2}}
          element="Accuil" 
          className="h-full w-[50%] rounded-md border-none active:border-none"
          cl="group text-gray-500 text font-semibold transition-all duration:500 easy-out hover:text-white"
@@ -22,7 +22,7 @@ const ContentNavbar = () => {
         <MotionElement 
          initial= {{opacity: 0, y:50}}
          animate= {{opacity: Affichage ? 1 : 0, y: Affichage ? 0: 50}}
-         transition={{duration:1.5, delay:0.4}}  
+         transition={{duration:1.5, delay:0.3}}  
          element="Equipe"
          className="h-full w-[50%] rounded-md border-none"
          cl="group text-gray-500 text  font-semibold transition-all duration:500 easy-out hover:text-white"
@@ -32,7 +32,7 @@ const ContentNavbar = () => {
         <MotionElement 
          initial= {{opacity: 0, y:50}}
          animate= {{opacity: Affichage ? 1 : 0, y: Affichage ? 0: 50}}
-         transition={{duration:1.5, delay:0.5}} 
+         transition={{duration:1.5, delay:0.4}} 
          element="Galerie"  
          className="h-full w-[50%] rounded-md border-none"
          cl="group text-gray-500 text  font-semibold transition-all duration:500 easy-out hover:text-white"
@@ -43,7 +43,7 @@ const ContentNavbar = () => {
         <MotionElement  
          initial= {{opacity: 0, y:50}}
          animate= {{opacity: Affichage ? 1 : 0, y: Affichage ? 0: 50}}
-         transition={{duration:1.5, delay:0.6}}
+         transition={{duration:1.5, delay:0.5}}
          element="Inscription"  
          className="h-full w-[80%] rounded-md border-none"
          cl="group text-gray-500 text  font-semibold transition-all duration:500 easy-out hover:text-white"
@@ -53,7 +53,7 @@ const ContentNavbar = () => {
         <MotionElement 
          initial= {{opacity: 0, y:50}}
          animate= {{opacity: Affichage ? 1 : 0, y: Affichage ? 0: 50}}
-         transition={{duration:1.5, delay:0.7}} 
+         transition={{duration:1.5, delay:0.6}} 
          element="Contact"  
          className="h-full w-[60%] rounded-md border-none"
          cl="group text-gray-500 text  font-semibold transition-all duration:500 easy-out hover:text-white"
