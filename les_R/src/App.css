@@ -6,10 +6,45 @@
     font-size : 22px;
 }
 
+.text-color-navbar{
+    color: gray
+}
+.text-color-navbar:hover{
+    color:#b1ce39
+}
+
+.color-span{
+    background: #b1ce39;
+}
+
+
 .colorText{
-   background: linear-gradient(to right, #000000, #8dc34c);
+   color : #b1ce39;
+    
 }
 
 .bg-gray{
     background : #141313
+}
+
+.text-presentation{
+    font-size : 150px
+}
+
+.text-description{
+    font-size : 50px
+}
+
+.text-color{
+   color: rgb(232, 53, 53)
+}
+
+.button-color{
+    background: white;
+}
+.button-color:hover{
+    background: #b1ce39;
+}
+.ring:hover{
+    border:#b1ce39
 }

@@ -1,9 +1,10 @@
-import logo from '../../image/logo.svg';
+import logo from "../../image/logo.svg";
 import { motion } from "framer-motion";
 import { useState, useEffect, useContext } from "react";
-import Navbar from '../Navbar/navbar.jsx';
+import Navbar from "../Navbar/navbar.jsx";
 import { AffichageContext } from "../../Context/affichageContext.jsx";
-
+import ContentPresentation from "../presentation/contentPresentation.jsx";
+import MainEquipe from "../Equipe/mainEquipe.jsx";
 const Presentation = () => {
   const { Affichage, changeAffichage } = useContext(AffichageContext);
   const [Moved, setMoved] = useState(false);
@@ -16,14 +17,10 @@ const Presentation = () => {
     const moveTimeout = setTimeout(() => {
       setAnime(false);
     }, 2000);
-    
+
     const zoom = setTimeout(() => {
       setAnime(true);
     }, 3000);
-
-    // const zoom = setInterval (()=>{
-    //   setAnime(!Anime)
-    // }, 1000)
 
     const changePlace = setTimeout(() => {
       setMoved(true);
@@ -36,18 +33,22 @@ const Presentation = () => {
 
   if (Affichage) {
     return (
-      <div className="grid grid-rows-[20%_80%] h-full w-full">
-        <Navbar></Navbar>
-        <div></div>
-
+      <div className="grid grid-rows-[20%_80%_100%] h-screen w-full">
+        <Navbar />
+        <ContentPresentation />
+        <MainEquipe />
       </div>
     );
   }
 
   return (
-    <div className="flex justify-center items-center h-full w-full">
+    <div className="flex justify-center items-center h-full w-full overflow-hidden">
       <motion.img
-        animate={{scale : Anime ? 1 : 2 , x: Moved ? -670 : 0, y:Moved ? -334 : 0}}
+        animate={{
+          scale: Anime ? 1 : 2,
+          x: Moved ? -670 : 0,
+          y: Moved ? -334 : 0,
+        }}
         transition={{ duration: 1.4 }}
         src={logo}
         className="h-[9%] w-[10%]"
@@ -55,30 +56,6 @@ const Presentation = () => {
     </div>
   );
 
-  // if (Anime) {
-  //   return (
-  //     <motion.div
-  //       initial={{ scale: 1 }}
-  //       animate={{ scale: 1.5 }}
-  //       transition={{ duration: 1 }}
-  //       className="flex justify-center items-center h-full w-full"
-  //     >
-  //       <img src={logo} className="h-[9%] w-[10%]" />
-  //     </motion.div>
-  //   );
-  // }
-  // if (!Anime) {
-  //   return (
-  //     <div className="flex justify-center items-center h-full w-full">
-  //       <motion.img
-  //         initial={{ scale: 1.5 }}
-  //         animate={{ scale: 1 }}
-  //         transition={{ duration: 1 }}
-  //         src={logo}
-  //         className="h-[9%] w-[10%]"
-  //       />
-  //     </div>
-  //   );
-  // }
+  
 };
 export default Presentation;

@@ -15,8 +15,8 @@ const ContentNavbar = () => {
          transition={{duration:1.5, delay:0.2}}
          element="Accuil" 
          className="h-full w-[50%] rounded-md border-none active:border-none"
-         cl="group text-gray-500 text font-semibold transition-all duration:500 easy-out hover:text-white"
-         cl1="block h-0.5 w-0 bg-white transition-all duration-500 group-hover:w-full">
+         cl="group text-color-navbar text font-semibold transition-all duration-500 ease-out text-color-navbar:hover"
+         cl1="block h-0.5 w-0 color-span transition-all duration-500 group-hover:w-full">
         </MotionElement>
 
         <MotionElement 
@@ -25,8 +25,8 @@ const ContentNavbar = () => {
          transition={{duration:1.5, delay:0.3}}  
          element="Equipe"
          className="h-full w-[50%] rounded-md border-none"
-         cl="group text-gray-500 text  font-semibold transition-all duration:500 easy-out hover:text-white"
-         cl1="block h-0.5 w-0 bg-white transition-all duration-500 group-hover:w-full">
+         cl="group text-color-navbar text  font-semibold transition-all duration:500 easy-out text-color-navbar:hover"
+         cl1="block h-0.5 w-0 color-span transition-all duration-500 group-hover:w-full">
         </MotionElement>
 
         <MotionElement 
@@ -35,8 +35,8 @@ const ContentNavbar = () => {
          transition={{duration:1.5, delay:0.4}} 
          element="Galerie"  
          className="h-full w-[50%] rounded-md border-none"
-         cl="group text-gray-500 text  font-semibold transition-all duration:500 easy-out hover:text-white"
-         cl1="block h-0.5 w-0 bg-white transition-all duration-500 group-hover:w-full"> 
+         cl="group text-color-navbar text  font-semibold transition-all duration:500 easy-out text-color-navbar:hover"
+         cl1="block h-0.5 w-0 color-span transition-all duration-500 group-hover:w-full"> 
         </MotionElement>
         
         
@@ -46,8 +46,8 @@ const ContentNavbar = () => {
          transition={{duration:1.5, delay:0.5}}
          element="Inscription"  
          className="h-full w-[80%] rounded-md border-none"
-         cl="group text-gray-500 text  font-semibold transition-all duration:500 easy-out hover:text-white"
-         cl1="block h-0.5 w-0 bg-white transition-all duration-500 group-hover:w-full">
+         cl="group text-color-navbar text  font-semibold transition-all duration:500 easy-out text-color-navbar:hover"
+         cl1="block h-0.5 w-0 color-span transition-all duration-500 group-hover:w-full">
         </MotionElement>
 
         <MotionElement 
@@ -56,8 +56,8 @@ const ContentNavbar = () => {
          transition={{duration:1.5, delay:0.6}} 
          element="Contact"  
          className="h-full w-[60%] rounded-md border-none"
-         cl="group text-gray-500 text  font-semibold transition-all duration:500 easy-out hover:text-white"
-         cl1="block h-0.5 w-0 bg-white transition-all duration-500 group-hover:w-full">
+         cl="group text-color-navbar text  font-semibold transition-all duration:500 easy-out text-color-navbar:hover"
+         cl1="block h-0.5 w-0 color-span transition-all duration-500 group-hover:w-full">
         </MotionElement>
        </div>
 
