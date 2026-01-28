@@ -1,6 +1,8 @@
-const Element = ({element, className, cl, cl1}) => {
+import { forwardRef } from "react";
+
+const Element = forwardRef(({element, className, cl, cl1},ref) => {
   return (
-    <div className="flex justify-center items-center h-[30%] w-full">
+    <div ref={ref} className="flex justify-center items-center h-[30%] w-full">
       <button className={className}>
         <p className={cl}>
             {element}
@@ -8,6 +10,6 @@ const Element = ({element, className, cl, cl1}) => {
         </p>
       </button>
     </div>
-  );
-};
+  )
+})
 export default Element;
