@@ -1,27 +1,28 @@
 import logo from "../image/logo.svg";
+import team from "../image/lesR.png";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import Navbar from "./navbar";
-
+import Navbar from "./Navbar/navbar";
 const Presentation = () => {
   const [Moved, setMoved] = useState(false);
-  useEffect(() => {
-    setTimeout(() => {
-      setMoved(true);
-    }, 3000);
-  }, []);
-  return Moved ? (
-    <Navbar></Navbar>
-  ) : (
-    <motion.div className="w-[100%] h-[100%] flex justify-center items-center">
-      <motion.img
-        animate={{ x: Moved ? -600 : 0, y: Moved ? -300 : 0 }}
-        transition={{ duration: 2 }}
-        src={logo}
-        className={`${Moved ? "w-[10%] h-[10%]" : "w-[30%] h-[30%]"}`}
-      />
-    </motion.div>
-  );
+
+    useEffect(() => {
+     setTimeout(() => setMoved(true), 3000);
+    }, []);
+
+    return ( 
+        Moved ? (
+            <div className="grid grid-rows-[20%] h-full w-full">
+                <Navbar></Navbar>
+            </div>
+        ):(
+            <div>
+                <img src={logo}/>
+            </div>
+
+        )
+    )
+  
 };
 
 export default Presentation;
