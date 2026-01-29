@@ -34,7 +34,9 @@ const Presentation = () => {
   if (Affichage) {
     return (
       <div className="grid grid-rows-[20%_80%_100%] h-screen w-full">
-        <Navbar />
+        <div className="h-full w-full">
+          <Navbar />
+        </div>
         <ContentPresentation />
         <MainEquipe />
       </div>
