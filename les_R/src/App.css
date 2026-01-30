@@ -80,3 +80,22 @@
     .text-button-green:hover{
         color:#b1ce39
     }
+
+    .rounded-image{
+        border-radius: 50px;
+    }
+
+    @keyframes loop-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-loop-scroll {
+  display: flex;
+  width: 200%; /* car on duplique le contenu */
+  animation: loop-scroll 20s linear infinite;
+}
