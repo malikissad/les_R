@@ -6,7 +6,7 @@ import { AffichageContext } from "../../Context/affichageContext.jsx";
 import ContentPresentation from "../presentation/contentPresentation.jsx";
 import MainEquipe from "../Equipe/mainEquipe.jsx";
 import MainGalerie from "../Galerie/mainGalerie.jsx";
-
+import Cadre from "../inscriptionForm/Cadre.jsx"
 const Presentation = () => {
   const { Affichage, changeAffichage, ChangeNavbar, setChangeNavbar} = useContext(AffichageContext);
   const [Moved, setMoved] = useState(false);
@@ -44,13 +44,14 @@ const Presentation = () => {
 
   if (Affichage) {
     return (
-      <div className="grid grid-rows-[20%_80%_100%_120%] h-screen w-full">
+      <div className="grid grid-rows-[20%_80%_100%_120%_120%] h-screen w-full">
         <div className="h-full w-full flex justify-center ">
           <Navbar />
         </div>
         <ContentPresentation />
         <MainEquipe />
         <MainGalerie></MainGalerie>
+        <Cadre></Cadre>
       </div>
     );
   }
