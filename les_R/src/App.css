@@ -1,54 +1,82 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
 
-.text{
-    font-size : 22px;
-}
+    .text{
+        font-size : 22px;
+    }
 
-.text-color-navbar{
-    color: gray
-}
-.text-color-navbar:hover{
-    color:#b1ce39
-}
+    .text-color-navbar{
+        color: gray
+    }
+    .text-color-navbar:hover{
+        color:#b1ce39
+    }
 
-.color-span{
-    background: #b1ce39;
-}
+    .text-color-ChangeNavbar{
+        color : gray
+    }
+
+    .span-red{
+        background: rgb(232, 53, 53);
+    }
+
+    .span-red:hover{
+        border :solid 2px rgb(232, 53, 53) 
+    }
+
+    .bg-green{
+        background: #b1ce39;
+    }
+
+    .text-color-ChangeNavbar:hover{
+        color: rgb(232, 53, 53)
+    }
+
+    .color-span{
+        background: #b1ce39;
+    }
 
 
-.colorText{
-   color : #b1ce39;
-    
-}
+    .colorText{
+    color : #b1ce39;
+        
+    }
 
-.bg-gray{
-    background : #141313
-}
+    .bg-gray{
+        background : #141313
+    }
 
-.text-presentation{
-    font-size : 150px
-}
+    .text-presentation{
+        font-size : 150px
+    }
 
-.text-description{
-    font-size : 50px
-}
+    .text-description{
+        font-size : 50px
+    }
 
-.text-color{
-   color: rgb(232, 53, 53)
-}
+    .text-color{
+    color: rgb(232, 53, 53)
+    }
 
-.button-color{
-    background: white;
-}
-.button-color:hover{
-    background: #b1ce39;
-}
-.ring:hover{
-    border:#b1ce39
-}
+    .button-color{
+        background: #b1ce39;
+    }
+    .button-color:hover{
+        background: white;
+    }
+    .ring:hover{
+        border:#b1ce39
+    }
 
-.font{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
+    .font{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+
+    .text-button-green{
+        color: white
+    }
+
+    .text-button-green:hover{
+        color:#b1ce39
+    }

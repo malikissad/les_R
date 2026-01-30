@@ -6,10 +6,19 @@ import { AffichageContext } from "../../Context/affichageContext.jsx";
 import ContentPresentation from "../presentation/contentPresentation.jsx";
 import MainEquipe from "../Equipe/mainEquipe.jsx";
 const Presentation = () => {
-  const { Affichage, changeAffichage } = useContext(AffichageContext);
+  const { Affichage, changeAffichage, ChangeNavbar, setChangeNavbar} = useContext(AffichageContext);
   const [Moved, setMoved] = useState(false);
   const [Anime, setAnime] = useState(false);
+  
   useEffect(() => {
+
+    const handLeScroll = () => {
+      if(window.scrollY > 600) setChangeNavbar(true)
+        else setChangeNavbar(false)
+    }
+
+    window.addEventListener("scroll" , handLeScroll)
+
     const zoomTimeout = setTimeout(() => {
       setAnime(true);
     }, 1000);
@@ -34,7 +43,7 @@ const Presentation = () => {
   if (Affichage) {
     return (
       <div className="grid grid-rows-[20%_80%_100%] h-screen w-full">
-        <div className="h-full w-full">
+        <div className="h-full w-full flex justify-center ">
           <Navbar />
         </div>
         <ContentPresentation />
@@ -48,10 +57,10 @@ const Presentation = () => {
       <motion.img
         animate={{
           scale: Anime ? 1 : 2,
-          x: Moved ? -670 : 0,
-          y: Moved ? -334 : 0,
+          x: Moved ? -673 : 0,
+          y: Moved ? -345 : 0,
         }}
-        transition={{ duration: 1.4 }}
+        transition={{ duration: Anime ? 0.5 : 1.4 }}
         src={logo}
         className="h-[9%] w-[10%]"
       />

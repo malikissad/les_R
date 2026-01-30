@@ -25,14 +25,14 @@ const ContentPresentation = () => {
         <ButtonPresentation
           delay="1.8"
           text="Rejoindre l'équipe"
-          className="button-color h-[60%] w-[15%] border-none button-color:hover hover:text-white 
-          transition-all duration-400"
+          className="text-button-green text-button-green:hover rounded-3xl button-color h-[60%] w-[15%] border-none button-color:hover 
+          transition-all duration-400 "
         ></ButtonPresentation>
         <ButtonPresentation
          delay="2"
           text="Découvrir l'équipe"
-          className="button-color h-[60%] w-[15%] border-none  button-color:hover hover:text-white 
-          transition-all duration-400 "
+          className="text-button-green rounded-3xl button-color h-[60%] w-[15%] border-none  transition-all duration-400  
+          button-color:hover text-button-green:hover hover:shadow-inner"
         ></ButtonPresentation>
       </div>
     </div>
