@@ -1,4 +1,5 @@
 import Form from "../inscriptionForm/form.jsx";
+
 const Cadre = () => {
   return (
     <div className="flex flex-col justify-center items-center">

@@ -10,16 +10,24 @@ import Cadre from "../inscriptionForm/Cadre.jsx"
 import MainContact from "../contact/mainContact.jsx";
 
 const Presentation = () => {
-  const { Affichage, changeAffichage, ChangeNavbar, setChangeNavbar} = useContext(AffichageContext);
+  const { Affichage, changeAffichage, setChangeNavbar, setPage} = useContext(AffichageContext);
   const [Moved, setMoved] = useState(false);
   const [Anime, setAnime] = useState(false);
   
   useEffect(() => {
-
     const handLeScroll = () => {
-      if(window.scrollY > 600) setChangeNavbar(true)
-        else setChangeNavbar(false)
+      console.log(window.scrollY)
+      if(window.scrollY >= -1 && window.scrollY < 600){setPage("accuil")}
+      else if(window.scrollY > 600 && window.scrollY < 1500) { setChangeNavbar(true), setPage("equipe")}
+      else if(window.scrollY > 1500 && window.scrollY < 2500) { setChangeNavbar(true), setPage("galerie")}
+      else if(window.scrollY > 2500 && window.scrollY < 3400) { setChangeNavbar(true), setPage("form")}
+      else if(window.scrollY > 3100 && window.scrollY < 4000) { setChangeNavbar(true), setPage("contact")}
+      else setChangeNavbar(false)
     }
+
+    console.log(window.scrollY)
+
+    
 
     window.addEventListener("scroll" , handLeScroll)
 

@@ -1,7 +1,12 @@
 import ContentContact from "./contentContact"
 import Reseau from "./reseau"
 import image from '../../image/logo.svg'
+import { useContext, useEffect} from "react"
+import { AffichageContext } from "../../Context/affichageContext"
+
 const MainContact = () =>{
+    
+    
     return (
         <div className="bg-[#1d1c1c]">
            <div className="w-full h-[30%] flex flex-col justify-center items-center">
