@@ -1,4 +1,4 @@
-import Form from "../inscriptionForm/form.jsx";
+import Form from "./form.jsx";
 
 const Cadre = () => {
   return (

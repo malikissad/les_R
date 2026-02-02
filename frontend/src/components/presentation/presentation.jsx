@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect, useContext } from "react";
 import Navbar from "../Navbar/navbar.jsx";
 import { AffichageContext } from "../../Context/affichageContext.jsx";
-import ContentPresentation from "../presentation/contentPresentation.jsx";
+import ContentPresentation from "./contentPresentation.jsx";
 import MainEquipe from "../Equipe/mainEquipe.jsx";
 import MainGalerie from "../Galerie/mainGalerie.jsx";
 import Cadre from "../inscriptionForm/Cadre.jsx"
@@ -17,11 +17,11 @@ const Presentation = () => {
   useEffect(() => {
     const handLeScroll = () => {
       console.log(window.scrollY)
-      if(window.scrollY >= -1 && window.scrollY < 600){setPage("accuil")}
-      else if(window.scrollY > 600 && window.scrollY < 1500) { setChangeNavbar(true), setPage("equipe")}
-      else if(window.scrollY > 1500 && window.scrollY < 2500) { setChangeNavbar(true), setPage("galerie")}
-      else if(window.scrollY > 2500 && window.scrollY < 3400) { setChangeNavbar(true), setPage("form")}
-      else if(window.scrollY > 3100 && window.scrollY < 4000) { setChangeNavbar(true), setPage("contact")}
+      if(window.scrollY >= -1 && window.scrollY < 600){setChangeNavbar(true), setPage("accuil")}
+      else if(window.scrollY > 600 && window.scrollY < 1500) {setPage("equipe")}
+      else if(window.scrollY > 1500 && window.scrollY < 2500) {setPage("galerie")}
+      else if(window.scrollY > 2500 && window.scrollY < 3400) {setPage("form")}
+      else if(window.scrollY > 3100 && window.scrollY < 4000) {setPage("contact")}
       else setChangeNavbar(false)
     }
 

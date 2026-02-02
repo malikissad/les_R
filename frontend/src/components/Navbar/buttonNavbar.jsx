@@ -25,7 +25,7 @@ const ButtonNavbar = () => {
       >
         <p
           className={`text-xl font-semibold transition-all duration-500 
-          ${ChangeNavbar ? "text-white group-hover:text-red-600" : "text-button-green group-hover:text-[#b1ce39]"}`}
+          text-white group-hover:text-red-600`}
         >
           Rejoin-nous
         </p>
