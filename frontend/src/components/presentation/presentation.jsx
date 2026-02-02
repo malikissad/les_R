@@ -16,7 +16,7 @@ const Presentation = () => {
 
   useEffect(() => {
     const handLeScroll = () => {
-      console.log(window.scrollY)
+      // console.log(window.scrollY)
       if(window.scrollY >= -1 && window.scrollY < 600){setChangeNavbar(false), setPage("accuil")}
       else if(window.scrollY > 600 && window.scrollY < 1500) {setChangeNavbar(true), setPage("equipe")}
       else if(window.scrollY > 1500 && window.scrollY < 2500) {setChangeNavbar(true), setPage("galerie")}
