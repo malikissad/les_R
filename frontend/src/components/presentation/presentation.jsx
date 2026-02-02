@@ -13,21 +13,17 @@ const Presentation = () => {
   const { Affichage, changeAffichage, setChangeNavbar, setPage} = useContext(AffichageContext);
   const [Moved, setMoved] = useState(false);
   const [Anime, setAnime] = useState(false);
-  
+
   useEffect(() => {
     const handLeScroll = () => {
       console.log(window.scrollY)
-      if(window.scrollY >= -1 && window.scrollY < 600){setChangeNavbar(true), setPage("accuil")}
-      else if(window.scrollY > 600 && window.scrollY < 1500) {setPage("equipe")}
-      else if(window.scrollY > 1500 && window.scrollY < 2500) {setPage("galerie")}
-      else if(window.scrollY > 2500 && window.scrollY < 3400) {setPage("form")}
-      else if(window.scrollY > 3100 && window.scrollY < 4000) {setPage("contact")}
+      if(window.scrollY >= -1 && window.scrollY < 600){setChangeNavbar(false), setPage("accuil")}
+      else if(window.scrollY > 600 && window.scrollY < 1500) {setChangeNavbar(true), setPage("equipe")}
+      else if(window.scrollY > 1500 && window.scrollY < 2500) {setChangeNavbar(true), setPage("galerie")}
+      else if(window.scrollY > 2500 && window.scrollY < 3400) {setChangeNavbar(true), setPage("form")}
+      else if(window.scrollY > 3100 && window.scrollY < 4000) {setChangeNavbar(true), setPage("contact")}
       else setChangeNavbar(false)
     }
-
-    console.log(window.scrollY)
-
-    
 
     window.addEventListener("scroll" , handLeScroll)
 
